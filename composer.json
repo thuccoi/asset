@@ -1,0 +1,21 @@
+{
+    "name": "tami/static",
+    "description": "static of tami",
+    "authors": [
+        {
+            "name": "Nguyen The Thuc",
+            "email": "thucfami@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+        }
+    },
+    "require": {
+    },
+    "config": {
+        "platform": {
+        }
+    }
+}
