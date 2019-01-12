@@ -1,6 +1,6 @@
 <?php
 
-namespace asseteer;
+namespace asset;
 
 use RecursiveIteratorIterator;
 use RecursiveDirectoryIterator;
@@ -10,7 +10,7 @@ use Composer\Package\Package;
 use Composer\Util\Filesystem;
 use Composer\IO\IOInterface;
 
-class AssetInstaller
+class Installer
 {
   const extraKey = 'post-install-asseteer';
   const packageExtraKey = 'asseteer';

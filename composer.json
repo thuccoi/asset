@@ -1,5 +1,5 @@
 {
-    "name": "tami/static",
+    "name": "tami/asset",
     "type": "library",
     "version": "1.0.0",
     "license": [
@@ -15,7 +15,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "static\\": "./"
+            "asset\\": "./"
         }
     },
     "require": {
