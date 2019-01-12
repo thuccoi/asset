@@ -32,20 +32,20 @@ function require(pathjs) {
 
 
 //tami
-require('/js/common/tami.js');
+require('/tami/js/common/tami.js');
 
 //autoload
-require('/resource/autoload.js');
+require('/tami/resource/autoload.js');
 
 //helper
-require('/js/common/helper.js');
+require('/tami/js/common/helper.js');
 
 //dialog
-require('/js/common/dialog/alert.js');
-require('/js/common/dialog/confirm.js');
+require('/tami/js/common/dialog/alert.js');
+require('/tami/js/common/dialog/confirm.js');
 
 //process
-require('/js/common/process/waitme.js');
+require('/tami/js/common/process/waitme.js');
 
 //form
-require('/js/common/form/form.js');
+require('/tami/js/common/form/form.js');

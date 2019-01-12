@@ -1,1 +1,1 @@
-require('/resource/autocomplete/jquery-ui.js');
+require('/tami/resource/autocomplete/jquery-ui.js');
