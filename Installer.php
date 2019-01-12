@@ -126,15 +126,15 @@ class Installer
 
     $directory = $targetPath . '/' . dirname($relativeFilename);
     if (! is_dir($directory)) {
-      mkdir($directory, 0766, true);
+      mkdir($directory, 0755, true);
     }
 
     $targetfile = $directory . '/' . basename($filename);
     if ( (! file_exists($targetfile)) || (md5_file($targetfile) != md5_file($filename)) ) {
       $io->write("  [copy] $targetfile");
-      chmod($filename, 0766);
+      chmod($filename, 0755);
       copy($filename, $targetfile);
-      chmod($targetfile, 0766);
+      chmod($targetfile, 0755);
     }
   }
 }
