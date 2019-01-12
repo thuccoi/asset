@@ -2,7 +2,7 @@ TAMI.helper = new function __Helper() {
     this.autoComplete = function (ref, url, options) {
         $(ref).autocomplete({
             source: function (request, response) {
-                $.post(url, {searchText: request.term}, function (data) {
+                TAMI.helper.ajax(ref, url, 'POST', {searchText: request.term}, function (data) {
                     response($.map(data.data.users, function (item) {
                         return item;
                     }));
