@@ -32,8 +32,10 @@ TAMI.helper = new function __Helper() {
         //add tami code 
         if (typeof data == 'object') {
             data['__TAMI_CODE'] = TAMI.pagedata.__TAMI_CODE;
+            data['__TAMI_FROM_AJAX'] = 1;
         } else {
             data = data + '&__TAMI_CODE=' + TAMI.pagedata.__TAMI_CODE;
+            data = data + '&__TAMI_FROM_AJAX=1';
         }
 
         $.ajax({
