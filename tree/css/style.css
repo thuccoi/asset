@@ -1,0 +1,216 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+}
+
+
+.sliderZoom input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 6px 0;
+}
+.sliderZoom input[type=range]:focus {
+    outline: none;
+}
+.sliderZoom input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+.sliderZoom input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 0.2px solid #000000;
+    height: 15px;
+    width: 6px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6.2px;
+}
+.sliderZoom input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #629fd2;
+}
+.sliderZoom input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+.sliderZoom input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 0.2px solid #000000;
+    height: 15px;
+    width: 6px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.sliderZoom input[type=range]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+.sliderZoom input[type=range]::-ms-fill-lower {
+    background: #1c4162;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.sliderZoom input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.sliderZoom input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 0.2px solid #000000;
+    height: 15px;
+    width: 6px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    height: 3px;
+}
+.sliderZoom input[type=range]:focus::-ms-fill-lower {
+    background: #3071a9;
+}
+.sliderZoom input[type=range]:focus::-ms-fill-upper {
+    background: #629fd2;
+}
+
+.sliderZoom{
+    width:20%;
+    float:right;
+    z-index: 1000;
+    transition:opacity 0.3s ease;
+    opacity:.3;
+}
+.sliderZoom:hover{
+    opacity:1;
+}
+
+rect.rectangulo-hijos.hover{
+    transform: rotate(6deg);
+}
+rect.rectangulo-hijos{
+    transform: rotate(2deg);
+    transition: transform .3s ease;
+}
+rect.rectangulo-hijos2.hover{
+    transform: rotate(-6deg);
+}
+rect.rectangulo-hijos2{
+    transform: rotate(-2deg);
+    transition: transform .3s ease;
+}
+
+rect.rectangulo-texto.hover{
+    fill:#f7f7f7;
+}
+
+.activo rect.barra-enlaces {
+    fill:#6F9FBB;
+}
+.cuadro-nodo-enlaces {
+    display: block;
+    width: 10vw;
+    max-height: 15px;
+    max-width: 150px;
+}
+
+.enlaces-nodo{
+    min-width: 100px;
+
+    display: block;
+    height: auto;
+    position: relative;
+    text-align: center;
+
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    opacity: 1;  
+}
+.cuadro-nodo-enlaces a{
+    opacity: 1;
+    margin:0 3px;  
+    color:0.8;
+}
+
+
+.cuadro-nodo-texto {
+    position: fixed;
+    width: 10vw;
+    max-width: 150px;
+    display: block;
+    transform: translate(-50%, 0);
+}
+
+.texto-nodo {
+
+    min-width: 100px;
+
+    display: block;
+    height: auto;
+    position: relative;
+    text-align: center;
+
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    opacity: 1;
+}
+.cuadro-nodo-texto .fa-info-circle {
+    position: absolute;
+    top:-7px;
+    left:48%;
+    color:#bbb;
+    z-index:100000;
+    cursor: pointer;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+    border:1px dotted #eee;
+}
+
+/* Generic styling */
