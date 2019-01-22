@@ -169,20 +169,20 @@ $(document).ready(function () {
         id_padre = 1;
     }
 
-    var orgJSON = [
+    var dataJSON = [
         {"id": "1", "parentid": "20", "name": "Presidencia"},
         {"id": "2", "parentid": "1", "name": "Asesoría"},
         {"id": "3", "parentid": "1", "name": "Área de "},
         {"id": "4", "parentid": "2", "name": "Área de "}
     ];
 
-    if (typeof parent.orgJSON !== 'undefined') {
+    if (typeof parent.dataJSON !== 'undefined') {
 
-        orgJSON = parent.orgJSON;
+        dataJSON = parent.dataJSON;
     }
 
     resultado = _queryTreeSort({
-        q: orgJSON
+        q: dataJSON
     });
 
     var treeBD;
