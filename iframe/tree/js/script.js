@@ -450,6 +450,16 @@ $(document).ready(function () {
         var nodeUpdate = node.transition()
                 .duration(duration)
                 .attr("transform", function (d) {
+                    //check dx is NaN
+                    if(isNaN (d.x)){
+                        d.x = root.x0;
+                        
+                    }
+                    if(isNaN (d.x0)){
+                        d.x0 = root.x0;
+                        
+                    }
+                    
                     return "translate(" + d.x + "," + d.y + ")";
                 });
 
