@@ -3,22 +3,22 @@ Icon packs
 ========================================================================== */
 @font-face {
   font-family: 'fontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), 
-    url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), 
-    url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), 
-    url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  src: url('/tami/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('/tami/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), 
+    url('/tami/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), 
+    url('/tami/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), 
+    url('/tami/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "linea";
-  src:url("../fonts/linea.eot");
-  src:url("../fonts/linea.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/linea.woff") format("woff"),
-    url("../fonts/linea.ttf") format("truetype"),
-    url("../fonts/linea.svg#linea") format("svg");
+  src:url("/tami/fonts/linea.eot");
+  src:url("/tami/fonts/linea.eot?#iefix") format("embedded-opentype"),
+    url("/tami/fonts/linea.woff") format("woff"),
+    url("/tami/fonts/linea.ttf") format("truetype"),
+    url("/tami/fonts/linea.svg#linea") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -4498,8 +4498,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('/tami/fonts/glyphicons-halflings-regular.eot');
+  src: url('/tami/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/tami/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('/tami/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/tami/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/tami/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -21473,7 +21473,7 @@ div.fancy-select ul.options li.hover {
   font-size: 1px;
   text-decoration: none;
   border: 0;
-  background: url('../../plugins/forms/select2/select2.png') right top no-repeat;
+  background: url('/static/plugins/forms/select2/select2.png') right top no-repeat;
   cursor: pointer;
   outline: 0;
 }
@@ -21549,7 +21549,7 @@ div.fancy-select ul.options li.hover {
   height: 18px;
   margin-left: 7px;
   margin-top: 3px;
-  background: url('../../plugins/forms/select2/select2.png') no-repeat 0 2px;
+  background: url('/static/plugins/forms/select2/select2.png') no-repeat 0 2px;
 }
 .select2-container .select2-choice:hover {
   border-color: #bdbdbd;
@@ -21580,15 +21580,15 @@ div.fancy-select ul.options li.hover {
   border: 1px solid #cacaca;
   border-radius: 0;
   box-shadow: none;
-  background: #ffffff url('../../plugins/forms/select2/select2.png') no-repeat 100% -22px;
-  background: url('../../plugins/forms/select2/select2.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  background: #ffffff url('/static/plugins/forms/select2/select2.png') no-repeat 100% -22px;
+  background: url('/static/plugins/forms/select2/select2.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
 }
 .select2-drop.select2-drop-above .select2-search input {
   margin-top: 4px;
 }
 .select2-search input.select2-active {
-  background: #ffffff url('../../plugins/forms/select2/spinner.gif') no-repeat 100%;
-  background: url('../../plugins/forms/select2/spinner.gif') no-repeat 100%, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
+  background: #ffffff url('/static/plugins/forms/select2/spinner.gif') no-repeat 100%;
+  background: url('/static/plugins/forms/select2/spinner.gif') no-repeat 100%, linear-gradient(top, #ffffff 85%, #eeeeee 99%);
 }
 .select2-container-active .select2-choice,
 .select2-container-active .select2-choices {
@@ -21709,7 +21709,7 @@ disabled look for disabled choices in the results dropdown
   display: none;
 }
 .select2-more-results.select2-active {
-  background: #eeeeee url('../../plugins/forms/select2/spinner.gif') no-repeat 100%;
+  background: #eeeeee url('/static/plugins/forms/select2/spinner.gif') no-repeat 100%;
 }
 .select2-more-results {
   background: #eeeeee;
@@ -21779,7 +21779,7 @@ disabled look for disabled choices in the results dropdown
   background: transparent !important;
 }
 .select2-container-multi .select2-choices .select2-search-field input.select2-active {
-  background: #ffffff url('../../plugins/forms/select2/spinner.gif') no-repeat 100% !important;
+  background: #ffffff url('/static/plugins/forms/select2/spinner.gif') no-repeat 100% !important;
 }
 .select2-default {
   color: #999 !important;
@@ -21817,7 +21817,7 @@ disabled look for disabled choices in the results dropdown
   top: 6px;
   font-size: 1px;
   outline: none;
-  background: url('../../plugins/forms/select2/select2.png') right top no-repeat;
+  background: url('/static/plugins/forms/select2/select2.png') right top no-repeat;
 }
 .select2-container-multi .select2-search-choice-close {
   left: 5px;
@@ -21885,7 +21885,7 @@ disabled look for disabled choices in the results dropdown
   .select2-search-choice-close,
   .select2-container .select2-choice abbr,
   .select2-container .select2-choice .select2-arrow b {
-    background-image: url('../../plugins/forms/select2/select2x2.png') !important;
+    background-image: url('/static/plugins/forms/select2/select2x2.png') !important;
     background-repeat: no-repeat !important;
     background-size: 60px 40px !important;
   }
@@ -23306,7 +23306,7 @@ fieldset[disabled] .bootstrap-timepicker-widget table td a.active {
 .colorpicker-saturation {
   width: 100px;
   height: 100px;
-  background-image: url("../img/bootstrap-colorpicker/saturation.png");
+  background-image: url("/tami/img/bootstrap-colorpicker/saturation.png");
   cursor: crosshair;
   float: left;
 }
@@ -23350,10 +23350,10 @@ fieldset[disabled] .bootstrap-timepicker-widget table td a.active {
   margin-top: -1px;
 }
 .colorpicker-hue {
-  background-image: url("../img/bootstrap-colorpicker/hue.png");
+  background-image: url("/tami/img/bootstrap-colorpicker/hue.png");
 }
 .colorpicker-alpha {
-  background-image: url("../img/bootstrap-colorpicker/alpha.png");
+  background-image: url("/tami/img/bootstrap-colorpicker/alpha.png");
   display: none;
 }
 .colorpicker {
@@ -23416,7 +23416,7 @@ fieldset[disabled] .bootstrap-timepicker-widget table td a.active {
   height: 10px;
   margin-top: 5px;
   clear: both;
-  background-image: url("../img/bootstrap-colorpicker/alpha.png");
+  background-image: url("/tami/img/bootstrap-colorpicker/alpha.png");
   background-position: 0 100%;
 }
 .colorpicker-color div {
@@ -23469,10 +23469,10 @@ fieldset[disabled] .bootstrap-timepicker-widget table td a.active {
   margin-top: 0px;
 }
 .colorpicker.colorpicker-horizontal .colorpicker-hue {
-  background-image: url("../img/bootstrap-colorpicker/hue-horizontal.png");
+  background-image: url("/tami/img/bootstrap-colorpicker/hue-horizontal.png");
 }
 .colorpicker.colorpicker-horizontal .colorpicker-alpha {
-  background-image: url("../img/bootstrap-colorpicker/alpha-horizontal.png");
+  background-image: url("/tami/img/bootstrap-colorpicker/alpha-horizontal.png");
 }
 .colorpicker.colorpicker-hidden {
   display: none;
@@ -24879,7 +24879,7 @@ span.CodeMirror-selectedtext {
   -webkit-filter: none;
   filter: none;
   transition: opacity 0.3s ease-in-out;
-  background-image: url("../img/spritemap.png");
+  background-image: url("/tami/img/spritemap.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -24892,7 +24892,7 @@ span.CodeMirror-selectedtext {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5/1), (min-device-pixel-ratio: 1.5), (min-resolution: 138dpi), (min-resolution: 1.5dppx) {
   .dropzone .dz-default.dz-message {
-    background-image: url("../img/spritemap@2x.png");
+    background-image: url("/tami/img/spritemap@2x.png");
     background-size: 428px 406px;
   }
 }
@@ -24956,7 +24956,7 @@ span.CodeMirror-selectedtext {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   transition: opacity 0.4s ease-in-out;
-  background-image: url("../img/spritemap.png");
+  background-image: url("/tami/img/spritemap.png");
   background-repeat: no-repeat;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5/1), (min-device-pixel-ratio: 1.5), (min-resolution: 138dpi), (min-resolution: 1.5dppx) {
@@ -24964,7 +24964,7 @@ span.CodeMirror-selectedtext {
   .dropzone-previews .dz-preview .dz-error-mark,
   .dropzone .dz-preview .dz-success-mark,
   .dropzone-previews .dz-preview .dz-success-mark {
-    background-image: url("../img/spritemap@2x.png");
+    background-image: url("/tami/img/spritemap@2x.png");
     background-size: 428px 406px;
   }
 }
@@ -24994,14 +24994,14 @@ span.CodeMirror-selectedtext {
   left: 0;
   width: 0%;
   height: 100%;
-  background-image: url("../img/spritemap.png");
+  background-image: url("/tami/img/spritemap.png");
   background-repeat: repeat-x;
   background-position: 0px -400px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5/1), (min-device-pixel-ratio: 1.5), (min-resolution: 138dpi), (min-resolution: 1.5dppx) {
   .dropzone .dz-preview .dz-progress .dz-upload,
   .dropzone-previews .dz-preview .dz-progress .dz-upload {
-    background-image: url("../img/spritemap@2x.png");
+    background-image: url("/tami/img/spritemap@2x.png");
     background-size: 428px 406px;
   }
 }
@@ -25105,8 +25105,8 @@ table.table thead .sorting_desc_disabled {
 .sorting_asc:before,
 .sorting_desc:before {
   font-family: 'fontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  src: url('/tami/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('/tami/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('/tami/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('/tami/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('/tami/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -27624,7 +27624,7 @@ li.L9 {
   display: block;
   width: 32px;
   height: 32px;
-  background: rgba(0, 0, 0, 0.4) url(../img/backtop.png) no-repeat center center;
+  background: rgba(0, 0, 0, 0.4) url(/tami/img/backtop.png) no-repeat center center;
   text-indent: -9999px;
   border-radius: 3px;
   transition: all;
@@ -28882,19 +28882,19 @@ fieldset[disabled] .pricing-table.yellow .pricing-bottom .price .btn.active {
   background-color: rgba(255, 255, 255, 0.7);
 }
 .weather.snow {
-  background-image: url(../img/weather/snow.png);
+  background-image: url(/tami/img/weather/snow.png);
 }
 .weather.rain {
-  background-image: url(../img/weather/rain.png);
+  background-image: url(/tami/img/weather/rain.png);
 }
 .weather.clear {
-  background-image: url(../img/weather/clear.png);
+  background-image: url(/tami/img/weather/clear.png);
 }
 .weather.cloud {
-  background-image: url(../img/weather/cloud.png);
+  background-image: url(/tami/img/weather/cloud.png);
 }
 .weather.sunny {
-  background-image: url(../img/weather/sunny.png);
+  background-image: url(/tami/img/weather/sunny.png);
 }
 /* -----------------------------------------
    Recent comments
