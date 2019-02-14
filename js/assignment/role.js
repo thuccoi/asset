@@ -5,7 +5,7 @@ var Role = new function __Role() {
 
 
         //get app logs
-        TAMI.helper.ajax(ref, '/assignment/role/log/' + appid, 'POST', {start: start}, function (data) {
+        TAMI.helper.ajax(ref, '/assignment/role/app-log/' + appid, 'POST', {start: start}, function (data) {
             var html = TAMI.render(data.data.logs, function (e) {
 
                 return logHTML(e);
