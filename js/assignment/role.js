@@ -1,11 +1,11 @@
 var Role = new function __Role() {
-    this.showRoleLog = function (ref, roleid) {
+    this.showEditLog = function (ref, roleid) {
         var $btnloadmore = $('#js-role-loadmore');
         var start = parseInt($btnloadmore.data('start'));
 
 
         //get app logs
-        TAMI.helper.ajax(ref, '/assignment/role/role-log/' + roleid, 'POST', {start: start}, function (data) {
+        TAMI.helper.ajax(ref, '/assignment/role/edit-log/' + roleid, 'POST', {start: start}, function (data) {
             var html = TAMI.render(data.data.logs, function (e) {
 
                 return logHTML(e);
@@ -24,13 +24,38 @@ var Role = new function __Role() {
 
     };
 
-    this.showLog = function (ref, appid) {
+    this.showIndexLog = function (ref, appid) {
         var $btnloadmore = $('#js-role-loadmore');
         var start = parseInt($btnloadmore.data('start'));
 
 
         //get app logs
-        TAMI.helper.ajax(ref, '/assignment/role/app-log/' + appid, 'POST', {start: start}, function (data) {
+        TAMI.helper.ajax(ref, '/assignment/role/index-log/' + appid, 'POST', {start: start}, function (data) {
+            var html = TAMI.render(data.data.logs, function (e) {
+
+                return logHTML(e);
+            });
+
+
+            $(ref).append(html);
+
+            //increment start
+            $btnloadmore.data('start', start + 1);
+
+            if (data.data.hideloadmore) {
+                $btnloadmore.hide();
+            }
+        });
+
+    };
+
+    this.showCreateLog = function (ref, appid) {
+        var $btnloadmore = $('#js-role-loadmore');
+        var start = parseInt($btnloadmore.data('start'));
+
+
+        //get app logs
+        TAMI.helper.ajax(ref, '/assignment/role/create-log/' + appid, 'POST', {start: start}, function (data) {
             var html = TAMI.render(data.data.logs, function (e) {
 
                 return logHTML(e);
