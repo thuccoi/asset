@@ -29313,13 +29313,13 @@ div.gallery-upload .dropzone .dz-message:after {
 
 .table-fix-left td{
     min-width: 170px;
-    height: 50px;
+    min-height: 50px;
 }
 
 .table-fix-left .td-left{
     position: absolute;
     left:15px; 
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 .table-fix-left td{
