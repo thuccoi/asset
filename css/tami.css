@@ -29307,12 +29307,12 @@ div.gallery-upload .dropzone .dz-message:after {
 }
 
 .table-fix-left{
-    margin-left: 170px;
+    margin-left: 200px;
     overflow-x: scroll;
 }
 
 .table-fix-left td{
-    min-width: 170px;
+    min-width: 200px;
     min-height: 30px;
 }
 
