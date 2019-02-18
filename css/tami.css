@@ -29313,17 +29313,16 @@ div.gallery-upload .dropzone .dz-message:after {
 
 .table-fix-left td{
     min-width: 200px;
-    min-height: 40px;
+    min-height: 50px;
+    border-top: 1px solid #e3e3e3;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 .table-fix-left .td-left{
     position: absolute;
     left:15px; 
-    padding-top: 5px;
-}
-
-.table-fix-left td{
-    border-top: 1px solid #e3e3e3;
+    padding-top: 10px;
 }
 
 .table-fix-left thead th{
