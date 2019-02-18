@@ -29321,3 +29321,13 @@ div.gallery-upload .dropzone .dz-message:after {
     left:15px; 
     padding-top: 15px;
 }
+
+.table-fix-left td{
+    border-top: 1px solid #e3e3e3;
+}
+
+
+.table-fix-left tbody th{
+    border-top: 1px solid #e3e3e3;
+    min-width: 170px;
+}
