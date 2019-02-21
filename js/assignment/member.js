@@ -46,4 +46,14 @@ var AssignmentMember = new function __AssignmentMember() {
 
     };
 
+    function logHTML(e) {
+        return `<li>
+                    <p>
+                        ` + e.message + `
+                        <span class="timeline-icon"><i class="fa  fa-edit"></i></span>
+                        <span class="timeline-date">` + e.create_at + `</span>
+                    </p>
+                </li>`;
+    }
+
 };
