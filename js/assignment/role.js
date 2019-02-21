@@ -49,6 +49,30 @@ var Role = new function __Role() {
 
     };
 
+    this.showPermissionLog = function (ref, appid) {
+        var $btnloadmore = $('#js-permission-loadmore');
+        var start = parseInt($btnloadmore.data('start'));
+
+        //get app logs
+        TAMI.helper.ajax(ref, '/assignment/role/permission-log/' + appid, 'POST', {start: start}, function (data) {
+            var html = TAMI.render(data.data.logs, function (e) {
+
+                return logHTML(e);
+            });
+
+
+            $(ref).append(html);
+
+            //increment start
+            $btnloadmore.data('start', start + 1);
+
+            if (data.data.hideloadmore) {
+                $btnloadmore.hide();
+            }
+        });
+
+    };
+
     this.showCreateLog = function (ref, appid) {
         var $btnloadmore = $('#js-role-loadmore');
         var start = parseInt($btnloadmore.data('start'));
