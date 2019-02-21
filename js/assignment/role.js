@@ -1,4 +1,27 @@
-var Role = new function __Role() {
+var AssignmentRole = new function __AssignmentRole() {
+    this.togglePermission = function (permission, roleid) {
+        TAMI.helper.ajax('.assignment', '/assignment/role/has-permission', 'POST', {permission: permission, role_id: roleid}, function (data) {
+
+            //hasrole
+            if (data.data.status != false) {
+
+                TAMI.confirm.show("Thực hiện <b>hủy bỏ</b> quyền hạn của vai trò này", function () {
+                    TAMI.helper.ajax('.tbpermission', '/assignment/role/remove-permission', 'POST', {permission: permission, role_id: roleid}, function (data) {
+                        AssignmentRole.showPermissionLog('#js-permission-activitys', TAMI.pagedata.appid);
+                    });
+                });
+
+            } else { //else
+                TAMI.confirm.show("Thực hiện <b>giao quyền</b> cho vai trò này", function () {
+                    TAMI.helper.ajax('.tbpermission', '/assignment/role/add-permission', 'POST', {permission: permission, role_id: roleid}, function (data) {
+                        AssignmentRole.showPermissionLog('#js-permission-activitys', TAMI.pagedata.appid);
+                    });
+                });
+            }
+
+        });
+    };
+
     this.showEditLog = function (ref, roleid) {
         var $btnloadmore = $('#js-role-loadmore');
         var start = parseInt($btnloadmore.data('start'));
