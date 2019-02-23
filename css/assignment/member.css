@@ -4,6 +4,7 @@
 
 .table-fix-left.assignment .td-left.user{
     min-width: 320px;
+    padding-left: 8px;
 }
 
 
