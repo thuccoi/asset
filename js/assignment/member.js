@@ -23,6 +23,31 @@ var AssignmentMember = new function __AssignmentMember() {
         });
     };
 
+    this.showEditLog = function (ref, memberid) {
+        var $btnloadmore = $('#js-member-loadmore');
+        var start = parseInt($btnloadmore.data('start'));
+
+
+        //get app logs
+        TAMI.helper.ajax(ref, '/assignment/member/edit-log/' + memberid, 'POST', {start: start}, function (data) {
+            var html = TAMI.render(data.data.logs, function (e) {
+
+                return logHTML(e);
+            });
+
+
+            $(ref).append(html);
+
+            //increment start
+            $btnloadmore.data('start', start + 1);
+
+            if (data.data.hideloadmore) {
+                $btnloadmore.hide();
+            }
+        });
+
+    };
+
     this.showIndexLog = function (ref, appid) {
         var $btnloadmore = $('#js-member-loadmore');
         var start = parseInt($btnloadmore.data('start'));
