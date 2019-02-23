@@ -27441,7 +27441,7 @@ body.fixed-right-sidebar:not(.fixed-header) #right-sidebar.rstop {
     padding: 15px 20px;
     border-top: 1px solid #e3e3e3;
     height: 51px;
-    bottom: 0;
+    bottom: -60px;
     left: 0;
     right: 0;
 }
