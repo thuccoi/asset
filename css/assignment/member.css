@@ -6,26 +6,26 @@
     min-width: 320px;
 }
 
-.table-fix-left.assignment .td-left.user .avatar{
+
+.table-fix-left.assignment tbody td{
+    height: 70px;
+}
+
+
+.members .user .avatar{
     width: 60px;
     height: 60px;
     float: left;
     padding: 0 5px;
 }
 
-
-.table-fix-left.assignment .td-left.user .name{
+.members .user .name{
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 
-.table-fix-left.assignment .td-left.user .email{
+.members .user .email{
     color: #777;
     font-weight: normal;
 }
-
-.table-fix-left.assignment tbody td{
-    height: 70px;
-}
-
