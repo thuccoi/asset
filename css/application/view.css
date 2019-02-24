@@ -1,0 +1,75 @@
+.members .avatar,
+.members .txt{
+    float: left;
+    box-sizing: border-box;
+}
+
+.members .avatar{
+    width: 70px;
+    padding-bottom: 10px;
+}
+
+
+.members .txt .name{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.members .txt .email{
+    color: #777;
+}
+
+.members .action .dropdown-toggle{
+    color: #bbb;
+}
+
+.members .btn-remove{
+    color: #aaa;
+    font-size: 15px;
+}
+
+.members .btn-remove:hover{
+    color: #777;
+}
+
+.members .select{
+    border: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;       /* remove default arrow */
+    background-image: none;   /* add custom arrow */
+}
+
+.members .profile .profile-avatar img{
+   border-radius: 0%;
+}
+
+.li-autocomplete{
+    position: relative;
+}
+
+.li-autocomplete .a-autocomplete{
+    display: block;
+}
+
+.li-autocomplete .image{
+    width: 50px;
+    padding: 5px;
+}
+
+
+.li-autocomplete .txt{
+    position: absolute;
+    left: 60px;
+    top: 5px;
+}
+
+
+.li-autocomplete .txt .name{
+    font-weight: 500;
+}
+
+.li-autocomplete .txt .email{
+    color: #777;
+    font-size: 13px;
+}

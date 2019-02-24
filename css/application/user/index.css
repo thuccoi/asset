@@ -1,0 +1,59 @@
+.users .table-responsive{
+    padding-bottom: 50px;
+}
+
+.users .avatar{
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 0 5px;
+}
+
+.users .avatar img{
+    width: 100%;
+}
+
+.users .txt{
+    padding-left: 5px;
+    float: left;
+}
+
+.users .txt .name{
+    margin-top: 2px;
+}
+
+.users .txt .email{
+    color: #777;
+}
+
+.users th:last-child,
+.users td:last-child{
+    text-align: right;
+    padding-right: 15px;
+}
+
+.users td:last-child .btn{
+    background-color: #fff;
+    color: #999;
+}
+
+.users td:last-child .btn:focus{
+    border: 1px solid #999;
+}
+
+div.dataTables_filter label { width: 100%; }
+div.dataTables_filter input { width: 100% !important; }
+
+
+.users .panel{
+    box-shadow: none;
+}
+
+.users .panel .panel-body{
+    border: none;
+}
+
+#email-sidebar #email-nav li a.active{
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.05);
+}

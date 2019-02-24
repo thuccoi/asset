@@ -1,0 +1,73 @@
+#wrapper{
+    background-color: #fff;
+}
+
+
+#page-application{
+    padding-bottom: 300px;
+}
+
+#page-application .app{
+    height: 200px;
+}
+
+#page-application .app .left,
+#page-application .app .right{
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+#page-application .app .left.logo{
+    width: 35%;
+}
+
+#page-application .app .right.info{
+    width: 65%;
+}
+
+
+#page-application .app .right.info .r{
+    margin-bottom: 2px;
+}
+
+#page-application .app .right.info .r.suggest{
+    background-color: #999;
+    color: #fff;
+    padding: 2px  15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+#page-application .app .right.info .name{
+    font-weight: 500;
+    font-size: 18px;
+    color: #444;
+}
+
+#page-application .app .right.info .type{
+    font-size: 14px;
+    color: #777;
+}
+
+#page-application .app .right.info .stars .stats{
+    color: #777;
+}
+
+#page-application .app .add{
+    height: 140px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 140px;
+    color: #aaa;
+    border: 1px dashed #aaa;
+    display: block;
+}
+
+#page-application .app .add:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+}
