@@ -49,12 +49,37 @@ var AssignmentMember = new function __AssignmentMember() {
     };
 
     this.showIndexLog = function (ref, appid) {
-        var $btnloadmore = $('#js-member-loadmore');
+        var $btnloadmore = $('#js-role-loadmore');
         var start = parseInt($btnloadmore.data('start'));
 
 
         //get app logs
         TAMI.helper.ajax(ref, '/assignment/member/index-log/' + appid, 'POST', {start: start}, function (data) {
+            var html = TAMI.render(data.data.logs, function (e) {
+
+                return logHTML(e);
+            });
+
+
+            $(ref).append(html);
+
+            //increment start
+            $btnloadmore.data('start', start + 1);
+
+            if (data.data.hideloadmore) {
+                $btnloadmore.hide();
+            }
+        });
+
+    };
+
+    this.showIndexMemberLog = function (ref, appid) {
+        var $btnloadmore = $('#js-member-loadmore');
+        var start = parseInt($btnloadmore.data('start'));
+
+
+        //get app logs
+        TAMI.helper.ajax(ref, '/assignment/member/index-member-log/' + appid, 'POST', {start: start}, function (data) {
             var html = TAMI.render(data.data.logs, function (e) {
 
                 return logHTML(e);
