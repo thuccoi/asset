@@ -5,7 +5,7 @@ var App = new function __App() {
 
 
         //get app logs
-        TAMI.helper.ajax(ref, '/application/index/app-log/' + appid, 'POST', {start: start}, function (data) {
+        TAMI.helper.ajax(ref, '/a/app/app-log/' + appid, 'POST', {start: start}, function (data) {
             var html = TAMI.render(data.data.logs, function (e) {
 
                 return appLogHTML(e);
@@ -39,7 +39,7 @@ var App = new function __App() {
 
         var start = parseInt($btnloadmore.data('start'));
         //get member logs
-        TAMI.helper.ajax(ref, '/application/index/member-log/' + appid, 'POST', {start: start}, function (data) {
+        TAMI.helper.ajax(ref, '/a/app/member-log/' + appid, 'POST', {start: start}, function (data) {
             var html = TAMI.render(data.data.logs, function (e) {
 
                 return MemeberLogHTML(e);
