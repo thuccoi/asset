@@ -56,3 +56,33 @@ TAMI.helper = new function __Helper() {
 
     };
 };
+
+
+//search tags member
+$(".__TAMI_TAG_MEMBER").each(function () {
+    var refmember = '#' + $(this).attr('id');
+    var urlmember = $(this).attr('url');
+    TAMI.helper.autoComplete(refmember, urlmember, {
+        focus: function (event, ui) {
+            $(refmember).val(ui.item.email);
+            return false;
+        },
+        select: function (event, ui) {
+            $(refmember).val(ui.item.email);
+            return false;
+        },
+        render: function (item) {
+            return `<a class="a-autocomplete"> 
+                        <img class="image" src="/static/img/avatars/` + (Math.floor(Math.random() * 10) + 1) + `.jpg"> 
+                        <div class="txt">
+                            <div class="name">
+                                ` + item.first_name + ' ' + item.last_name + ` (` + item.username + `)
+                            </div>     
+                            <div class="email">
+                                ` + item.email + `
+                            </div>
+                        </div>
+                    </a>`;
+        }
+    });
+});
